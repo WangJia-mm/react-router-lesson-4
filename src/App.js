@@ -12,10 +12,11 @@ import User from './User';
 import Profile from './Profile';
 import PrivateRoute from './PrivateRoute';
 import Login from './Login';
+import MenuLink from './MenuLink';
 const App = () => (
     <Router>
         <div>
-            <div className="navbar navbar-inverse">
+            <div className="navbar navbar-default">
                 <div className="container-fluid">
                     <div className="navbar-header">
                         <div className="navbar-brand">
@@ -24,9 +25,9 @@ const App = () => (
                     </div>
                     <div>
                         <ul className="nav navbar-nav">
-                            <li><Link to="/">首页</Link></li>
-                            <li><Link to="/user">用户管理</Link></li>
-                            <li><Link to="/profile">个人设置</Link></li>
+                            <MenuLink activeOnlyWhenExact={true} to="/" label="首页"/>
+                            <MenuLink activeOnlyWhenExact={true} to="/user" label="用户管理"/>
+                            <MenuLink activeOnlyWhenExact={true} to="/profile" label="个人设置"/>
                             <li><Link to="/zhufengpeixun">品牌</Link></li>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">

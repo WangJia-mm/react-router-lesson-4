@@ -8,3 +8,4 @@ https://reacttraining.com/react-router
 - 4. 获取路径参数
 - 5. switch只显示一个组件
 - 6. 实现登录和退出功能
+- 7. 实现选中菜单的高亮显示
