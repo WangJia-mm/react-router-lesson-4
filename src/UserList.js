@@ -1,7 +1,17 @@
 import React from 'react'
-const Home = () => (
-    <div>
-        <h2>用户列表</h2>
-    </div>
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
+const UserList = () => (
+    <ul className="list-group">
+        <li className="list-group-item">
+            <Link to="/user/detail/1">张三</Link>
+        </li>
+        <li className="list-group-item">
+            <Link to="/user/detail/2">李四</Link>
+        </li>
+    </ul>
 )
-export default Home
+export default UserList

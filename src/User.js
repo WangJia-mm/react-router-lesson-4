@@ -1,11 +1,8 @@
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 import UserList from './UserList';
 import UserAdd from './UserAdd';
+import UserDetail from './UserDetail';
 const User = () => (
     <div className="row">
         <div className="col-md-2">
@@ -17,6 +14,7 @@ const User = () => (
         <div className="col-md-10">
             <Route path={`/user/list`} component={UserList}/>
             <Route path={`/user/add`} component={UserAdd}/>
+            <Route path={`/user/detail/:id`} component={UserDetail}/>
         </div>
     </div>
 )

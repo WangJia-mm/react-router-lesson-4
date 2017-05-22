@@ -13,7 +13,7 @@ import Profile from './Profile';
 const App = () => (
     <Router>
         <div>
-            <div className="navbar navbar-default">
+            <div className="navbar navbar-inverse">
                 <div className="container-fluid">
                     <div className="navbar-header">
                         <div className="navbar-brand">

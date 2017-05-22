@@ -1,7 +1,7 @@
 import React from 'react'
-const Home = () => (
+const UserAdd = () => (
     <div>
         <h2>添加用户</h2>
     </div>
 )
-export default Home
+export default UserAdd
