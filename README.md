@@ -9,3 +9,4 @@ https://reacttraining.com/react-router
 - 5. switch只显示一个组件
 - 6. 实现登录和退出功能
 - 7. 实现选中菜单的高亮显示
+- 8. 切换路由的时候进行提示
