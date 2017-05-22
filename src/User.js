@@ -3,7 +3,7 @@ import {Route, Link} from 'react-router-dom'
 import UserList from './UserList';
 import UserAdd from './UserAdd';
 import UserDetail from './UserDetail';
-const User = () => (
+const User = ({location}) => (
     <div className="row">
         <div className="col-md-2">
             <ul className="nav nav-pills nav-stacked">
@@ -12,9 +12,9 @@ const User = () => (
             </ul>
         </div>
         <div className="col-md-10">
-            <Route path={`/user/list`} component={UserList}/>
-            <Route path={`/user/add`} component={UserAdd}/>
-            <Route path={`/user/detail/:id`} component={UserDetail}/>
+            <Route   location={location}  path={`/user/list`} component={UserList}/>
+            <Route location={location}  path={`/user/add`} component={UserAdd}/>
+            <Route location={location}  path={`/user/detail/:id`} component={UserDetail}/>
         </div>
     </div>
 )

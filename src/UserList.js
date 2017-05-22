@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 const UserList = () => (
     <ul className="list-group">
         <li className="list-group-item">

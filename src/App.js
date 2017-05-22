@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Link,
+    Switch
 } from 'react-router-dom'
 
 import Home from './Home';
@@ -25,14 +26,18 @@ const App = () => (
                             <li><Link to="/">首页</Link></li>
                             <li><Link to="/user">用户管理</Link></li>
                             <li><Link to="/profile">个人设置</Link></li>
+                            <li><Link to="/zhufengpeixun">品牌</Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="container">
+                <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route path="/user" component={User}/>
                 <Route path="/profile" component={Profile}/>
+                <Route path="/:name" render={({match})=>(<div>{match.params.name}</div>)}/>
+                </Switch>
             </div>
         </div>
     </Router>

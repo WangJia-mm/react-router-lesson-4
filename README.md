@@ -6,3 +6,4 @@ ReactRouter4的课件
 - 2. 引入bootstrap
 - 3. 实现二级路由
 - 4. 获取路径参数
+- 5. switch只显示一个组件
