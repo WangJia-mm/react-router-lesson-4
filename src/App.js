@@ -13,6 +13,7 @@ import Profile from './Profile';
 import PrivateRoute from './PrivateRoute';
 import Login from './Login';
 import MenuLink from './MenuLink';
+import NoMatch from './NoMatch';
 const App = () => (
     <Router>
         <div>
@@ -42,7 +43,8 @@ const App = () => (
                     <Route path="/user" component={User}/>
                     <PrivateRoute path="/profile" component={Profile}/>
                     <Route path="/login" component={Login}/>
-                    <Route path="/:name" render={({match}) => (<div>{match.params.name}</div>)}/>
+                   {/* <Route path="/:name" render={({match}) => (<div>{match.params.name}</div>)}/>*/}
+                    <Route component={NoMatch}/>
                 </Switch>
             </div>
         </div>
