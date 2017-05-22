@@ -6,23 +6,9 @@ import {
     Link
 } from 'react-router-dom'
 
-const Home = () => (
-    <div>
-        <h2>首页</h2>
-    </div>
-)
-
-const User = () => (
-    <div>
-        <h2>用户管理</h2>
-    </div>
-)
-
-const Profile = () => (
-    <div>
-        <h3>个人设置</h3>
-    </div>
-)
+import Home from './Home';
+import User from './User';
+import Profile from './Profile';
 
 const App = () => (
     <Router>
@@ -44,13 +30,9 @@ const App = () => (
                 </div>
             </div>
             <div className="container">
-                <div className="row">
-                    <div className="col-md-12">
-                        <Route exact path="/" component={Home}/>
-                        <Route path="/user" component={User}/>
-                        <Route path="/profile" component={Profile}/>
-                    </div>
-                </div>
+                <Route exact path="/" component={Home}/>
+                <Route path="/user" component={User}/>
+                <Route path="/profile" component={Profile}/>
             </div>
         </div>
     </Router>
